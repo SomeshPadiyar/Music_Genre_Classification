@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # Core Data Science Libraries
 numpy==1.24.3
 pandas==2.1.4
@@ -8,11 +10,11 @@ scikit-learn==1.3.2
 # Audio Processing
 librosa==0.10.2
 
-# TensorFlow (Standard Linux version for Cloud)
-tensorflow==2.13.0
+# TensorFlow (CPU-only version for Cloud memory limits)
+tensorflow-cpu==2.13.0
 tensorflow-hub==0.16.1
 
-# PyTorch & Transformers (For MERT Extraction)
+# PyTorch & Transformers (CPU version)
 torch
 transformers
 
