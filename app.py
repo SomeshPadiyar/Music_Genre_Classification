@@ -18,6 +18,7 @@ st.set_page_config(page_title="Music Genre Classifier", page_icon="🎶", layout
 def load_pipelines():
     # --- YAMNet Components ---
     yamnet_model = tf.keras.models.load_model('yamnet_music_model.keras', compile=False)
+    # yamnet_model = tf.keras.models.load_model('yamnet_music_model.h5', compile=False)
     yamnet_scaler = joblib.load('yamnet_scaler.pkl')
     yamnet_le = joblib.load('yamnet_label_encoder.pkl')
     yamnet_extractor = hub.load('https://tfhub.dev/google/yamnet/1')
