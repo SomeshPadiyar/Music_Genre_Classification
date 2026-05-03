@@ -8,9 +8,8 @@ scikit-learn==1.3.2
 # Audio Processing
 librosa==0.10.2
 
-# TensorFlow (Apple Silicon optimized for YAMNet)
-tensorflow-macos==2.13.0
-tensorflow-metal==1.0.1
+# TensorFlow (Standard Linux version for Cloud)
+tensorflow==2.13.0
 tensorflow-hub==0.16.1
 
 # PyTorch & Transformers (For MERT Extraction)
@@ -20,7 +19,3 @@ transformers
 # Web UI & Model Serialization
 streamlit
 joblib
-
-# Notebook support (If you are still running Jupyter)
-jupyter==1.0.0
-ipykernel==6.29.4
