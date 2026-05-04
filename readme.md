@@ -1,10 +1,5 @@
 # 🎵 Music Genre Classification
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.57.0-red.svg)](https://streamlit.io/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.0-orange.svg)](https://www.tensorflow.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-Latest-ee4c2c.svg)](https://pytorch.org/)
-
 ## 📌 Project Overview
 The objective of this project is to design a machine learning system that automatically classifies an input audio track into its correct music genre. Given a short music clip, the model extracts meaningful audio features and predicts the most probable genre (e.g., classical, jazz, pop, rock, metal, etc.) with high accuracy.
 
@@ -30,3 +25,36 @@ To achieve high accuracy and robustness, this project implements a **Dual-Model 
 ```bash
 git clone [https://github.com/your-username/Music-Genre-Classification.git](https://github.com/your-username/Music-Genre-Classification.git)
 cd Music-Genre-Classification
+```
+
+**2. Create a virtual environment (Recommended)**
+```bash
+python3.11 -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+**3. Install dependencies**
+*Note: This project requires specific library versions to maintain compatibility between TensorFlow 2.15.0 and Streamlit.*
+```bash
+pip install -r requirements.txt
+```
+
+**4. Run the Streamlit Application**
+```bash
+streamlit run app.py
+```
+
+## 🚀 Cloud Deployment
+This application is fully optimized for cloud deployment on **Hugging Face Spaces**. 
+* Uses `torch.inference_mode()` for fast CPU inference.
+* Custom `.gitattributes` configured for Git Large File Storage (LFS) to handle `.h5` and `.pkl` weights.
+
+## 📸 Demo Images
+
+Here is a look at the application in action:
+
+### Model Interface
+![Demo 1](Demo_Image/01_Image.png)
+
+### Prediction Results
+![Demo 2](Demo_Image/02_Image.png)
